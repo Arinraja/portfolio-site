@@ -20,6 +20,7 @@ body {
   background: var(--bg);
   color: var(--text);
   scroll-behavior: smooth;
+  line-height: 1.6;
 }
 
 header {
@@ -37,6 +38,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .logo {
@@ -49,6 +51,7 @@ header {
   list-style: none;
   display: flex;
   gap: 1.2rem;
+  flex-wrap: wrap;
 }
 
 .nav-links a {
@@ -76,6 +79,8 @@ header {
   justify-content: center;
   align-items: center;
   min-height: 60vh;
+  padding: 2rem 1rem;
+  text-align: center;
 }
 
 .btn-primary {
@@ -144,6 +149,10 @@ header {
 
 form {
   margin-top: 2rem;
+  width: 100%;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .form-group {
@@ -151,7 +160,8 @@ form {
   margin-bottom: 2rem;
 }
 
-input, textarea {
+input,
+textarea {
   width: 100%;
   padding: 0.8rem;
   border: 1px solid #cbd5e1;
@@ -206,4 +216,60 @@ footer {
 .reveal.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+/* ✅ Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    padding-top: 1rem;
+  }
+
+  .hero {
+    padding: 3rem 1rem;
+    min-height: 50vh;
+  }
+
+  .section {
+    padding: 3rem 1rem;
+  }
+
+  .cards-container {
+    grid-template-columns: 1fr;
+  }
+
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+
+  .btn-primary {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 1.25rem;
+  }
+
+  .btn-primary {
+    padding: 0.7rem 1.2rem;
+    font-size: 0.95rem;
+  }
+
+  .section {
+    padding: 2rem 1rem;
+  }
+
+  input,
+  textarea {
+    font-size: 0.95rem;
+  }
 }
