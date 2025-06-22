@@ -8,7 +8,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
 </head>
 <body>
-  <header>
+  <!-- <header>
     <nav class="navbar">
       <h1 class="logo">Arin Raja</h1>
       <ul class="nav-links">
@@ -20,7 +20,25 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-  </header>
+  </header> -->
+    <header>
+  <nav class="navbar">
+    <div class="logo">Arin Raja</div>
+
+    <!-- Hamburger Icon -->
+    <div class="hamburger" id="hamburger">
+      ☰
+    </div>
+
+    <!-- Navigation Links -->
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
 
   <section id="hero" class="section hero reveal">
     <div class="hero-content">
@@ -121,3 +139,11 @@ Currently, I’m focused on sharpening my skills in DSA, cloud technologies, and
   <script src="script.js"></script>
 </body>
 </html>
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('navLinks');
+
+  hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+  });
+</script>
