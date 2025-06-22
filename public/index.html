@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Arin Raja- Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">Arin Raja</h1>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education-details">Education-Details</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="hero" class="section hero reveal">
+    <div class="hero-content">
+      <h2>Crafting Intelligent Web Apps with Code, Logic, and Curiosity</Crafting></h2>
+      <p>I'm a final-year engineering student passionate about building smart, scalable software. I specialize in full-stack web development, process automation, and AI-driven solutions. From dynamic UIs to backend APIs and automation workflows, I love turning ideas into real, working products.
+
+</p>
+      <!-- <a href="#contact" class="btn-primary" >Let’s Connect</a> -->
+    </div>
+    <a href="#contact" class="btn-primary">let's Connect</a>
+  </section>
+
+  <section id="about" class="section reveal">
+    <h2>About Me</h2>
+    <p>I’m a final-year Computer Science engineering student with a deep interest in building scalable software and solving real-world problems through technology. I specialize in full-stack web development using tools like HTML, CSS, JavaScript, Django, and Nuxt.js.
+
+I'm also passionate about process automation and have experience designing AI-powered workflows using tools like n8n and OpenAI APIs. From deploying full-stack applications to crafting intelligent automation pipelines, I enjoy building solutions that are both functional and future-ready.
+
+Currently, I’m focused on sharpening my skills in DSA, cloud technologies, and backend engineering while working on personal projects and internships. I’m actively seeking opportunities where I can learn, grow, and contribute to impactful software systems.<!-- About details --></p>
+  </section>
+
+  <section id="projects" class="section reveal">
+    <h2>Projects</h2>
+    <div class="cards-container">
+      <!-- Repeat this for each project -->
+      <div class="card">
+        <h3><!-- Project Title --> IET SUPER CLASSMATES</h3>
+        <p><!-- Description -->IET Classmates is a full-stack web application designed to help students at the Institute of Engineering and Technology (IET) connect, collaborate, and stay updated. The platform enables users to create profiles, join study groups, share resources, and post updates—all in a secure, responsive, and easy-to-use interface</p>
+        <p><strong>Tech:</strong> Django · Nuxt.js · PostgreSQL · JWT · Tailwind CSS<!-- Tech stack --></p>
+        <div class="card-links">
+          <a href="https://github.com/Arinraja/IETSUPERCLASSMATES.git">GitHub</a>
+          <a href="https://classmates-2.onrender.com/">Live Demo</a>
+        </div>
+        
+      </div>
+    </div>
+    <div class="cards-container">
+      <!-- Repeat this for each project -->
+      <div class="card">
+        <h3><!-- Project Title --> Coffee Shop Website</h3>
+        <p><!-- Description -->A clean and responsive static website built for a local café to showcase their menu, ambiance, and contact details. The site was designed with user-friendly navigation, mobile-first responsiveness, and visually appealing layouts to reflect the café’s warm brand identity.</p>
+        <p><strong>Tech:</strong> HTML · CSS · Responsive Design<!-- Tech stack --></p>
+        <div class="card-links">
+          <!-- <a href="https://github.com/Arinraja/IETSUPERCLASSMATES.git">GitHub</a>
+          <a href="https://classmates-2.onrender.com/">Live Demo</a> -->
+        </div>
+        
+      </div>
+    </div>
+   
+    </div>
+  </section>
+  <section id ="education-details" class="section reveal">
+    <h2>Education Details</h2>
+    <div class="cards-container">
+        <div class="card">
+            <h3> Bachelors of Engineering </h3>
+            <p>I did my Bachelors from Dr. Bhim Rao Ambedkar University Agra. In Computer Science and Engineering </p>
+            <p><strong>Year/Batch:</strong>2021-2025</p>
+        </div>
+    </div>
+
+  </section>
+
+  <section id="skills" class="section reveal">
+    <h2>Skills</h2>
+    <div class="tag-container">
+      <span class="tag">HTML</span>
+      <span class="tag">CSS</span>
+      <span class="tag">JavaScript</span>
+    </div>
+  </section>
+
+  <section id="contact" class="section reveal">
+    <h2>Contact Me</h2>
+    <form id="contactForm" method="POST" action="/contact">
+      <div class="form-group">
+        <input type="text" name="name" required />
+        <label>Your Name</label>
+      </div>
+      <div class="form-group">
+        <input type="email" name="email" required />
+        <label>Your Email</label>
+      </div>
+      <div class="form-group">
+        <textarea name="message" required></textarea>
+        <label>Your Message</label>
+      </div>
+      <button type="submit" class="btn-primary">Send Message</button>
+    </form>
+    <p id="formResponse"></p>
+  </section>
+
+  <footer>
+    <p>© <!-- Your Name --> Arin Raja| <a href="https://www.linkedin.com/in/arin-raja">LinkedIn</a> | <a href="https://github.com/account">GitHub</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
