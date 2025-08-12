@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Test</title>
+</head>
+<body>
+    <h1>Testing Your Profile Photo</h1>
+    
+    <h2>Test 1: Direct path</h2>
+    <img src="public/images/Photo on 07-08-25 at 9.33 AM #2.jpg" alt="Test 1" style="width: 200px; height: 200px; object-fit: cover;">
+    
+    <h2>Test 2: Relative path</h2>
+    <img src="images/Photo on 07-08-25 at 9.33 AM #2.jpg" alt="Test 2" style="width: 200px; height: 200px; object-fit: cover;">
+    
+    <h2>Test 3: URL encoded</h2>
+    <img src="images/Photo%20on%2007-08-25%20at%209.33%20AM%20%232.jpg" alt="Test 3" style="width: 200px; height: 200px; object-fit: cover;">
+    
+    <script>
+        // Check if images load
+        document.querySelectorAll('img').forEach((img, index) => {
+            img.onload = () => console.log(`Image ${index + 1} loaded successfully`);
+            img.onerror = () => console.log(`Image ${index + 1} failed to load`);
+        });
+    </script>
+</body>
+</html>

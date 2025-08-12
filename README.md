@@ -1,203 +1,161 @@
 # Arin Raja - Portfolio Website
 
-A modern, responsive portfolio website built with Node.js, Express, and advanced animations using GSAP. Features a clean design with dark/light theme support, smooth animations, and interactive elements.
+A modern, responsive portfolio website built with HTML, CSS, JavaScript, and Node.js. Features advanced animations, dark/light theme support, and interactive elements.
 
 ## ✨ Features
 
-### 🎨 **Visual Enhancements**
-- **Advanced Animations**: GSAP-powered smooth animations and transitions
+### 🎨 Design & UI
+- **Modern Design**: Clean, professional layout with smooth animations
 - **Dark/Light Theme**: Toggle between themes with persistent storage
-- **Loading Screen**: Animated loading screen with custom loader
-- **Scroll Progress**: Real-time scroll progress indicator
-- **Floating Elements**: Animated background shapes
-- **Parallax Effects**: Smooth parallax scrolling
-- **Custom Cursor**: Interactive cursor effects
+- **Responsive Design**: Fully responsive across all devices
+- **Smooth Animations**: GSAP-powered animations and transitions
+- **Loading Screen**: Elegant loading animation with progress indicator
 
-### 🧭 **Navigation & UX**
-- **Sticky Navbar**: Glass-morphism effect with backdrop blur
-- **Active Section Highlighting**: Automatic navigation highlighting
-- **Smooth Scrolling**: GSAP-powered smooth section transitions
-- **Mobile Menu**: Animated hamburger menu for mobile devices
-- **Touch Gestures**: Swipe support for mobile navigation
+### 👤 Profile Features
+- **Interactive Profile Photo**: Upload and change your profile picture
+- **Photo Persistence**: Profile photos are saved locally and persist across sessions
+- **Hover Effects**: Smooth hover animations with upload tooltip
+- **Social Links**: Integrated social media links with hover effects
 
-### 🎯 **Interactive Elements**
-- **Project Cards**: Hover effects with 3D transformations
-- **Skill Progress Bars**: Animated progress indicators
-- **Contact Form**: Enhanced form with loading states and animations
-- **Social Links**: Interactive social media buttons
-- **Theme Toggle**: Animated theme switching
+### 🏆 Certificates Section
+- **Certificate Gallery**: Showcase your achievements and certifications
+- **Interactive Cards**: Hover effects and smooth animations
+- **Modal View**: Click to view certificate details in a modal
+- **Responsive Grid**: Adaptive layout for different screen sizes
+- **Download Links**: Easy access to certificate downloads
 
-### 📱 **Responsive Design**
-- **Mobile-First**: Optimized for all screen sizes
-- **Touch-Friendly**: Large touch targets for mobile
-- **Performance Optimized**: Throttled scroll events and lazy loading
-- **Accessibility**: Keyboard navigation and screen reader support
+### 📱 Navigation & UX
+- **Smooth Scrolling**: Seamless navigation between sections
+- **Active Navigation**: Highlights current section in navigation
+- **Mobile Menu**: Responsive mobile navigation with hamburger menu
+- **Progress Bar**: Visual scroll progress indicator
+- **Keyboard Navigation**: Full keyboard accessibility support
 
-## 🚀 Technologies Used
+### 📧 Contact Form
+- **Form Validation**: Client and server-side validation
+- **Email Integration**: Nodemailer integration for sending emails
+- **Rate Limiting**: Protection against spam submissions
+- **Success/Error Handling**: User-friendly feedback messages
 
-### Frontend
-- **HTML5**: Semantic markup
-- **CSS3**: Modern styling with CSS Grid and Flexbox
-- **JavaScript (ES6+)**: Modern JavaScript features
-- **GSAP**: Professional animation library
-- **Font Awesome**: Icon library
-- **Google Fonts**: Typography (Poppins)
+## 🚀 Getting Started
 
-### Backend
-- **Node.js**: Server runtime
-- **Express.js**: Web framework
-- **Nodemailer**: Email functionality
-- **Helmet**: Security middleware
-- **CORS**: Cross-origin resource sharing
-- **Rate Limiting**: API protection
+### Prerequisites
+- Node.js (v14 or higher)
+- npm or yarn
 
-## 📦 Installation
+### Installation
 
-1. **Clone the repository**
-   ```bash
-   git clone <repository-url>
-   cd portfolio
-   ```
+1. Clone the repository:
+```bash
+git clone <repository-url>
+cd porthfolio
+```
 
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
+2. Install dependencies:
+```bash
+npm install
+```
 
-3. **Environment Setup**
-   Create a `.env` file in the root directory:
-   ```env
-   EMAIL_USER=your-email@gmail.com
-   EMAIL_PASS=your-app-password
-   PORT=3000
-   NODE_ENV=development
-   ```
+3. Set up environment variables (optional):
+Create a `.env` file in the root directory:
+```env
+EMAIL_USER=your-email@gmail.com
+EMAIL_PASS=your-app-password
+NODE_ENV=development
+```
 
-4. **Start the server**
-   ```bash
-   # Development mode
-   npm run dev
-   
-   # Production mode
-   npm start
-   ```
+4. Start the development server:
+```bash
+npm start
+```
 
-5. **Access the website**
-   Open your browser and navigate to `http://localhost:3000`
-
-## 🔧 Configuration
-
-### Email Setup
-1. Enable 2-factor authentication on your Gmail account
-2. Generate an App Password for the portfolio
-3. Add the credentials to your `.env` file
-
-### Customization
-- **Colors**: Modify CSS variables in `public/style.css`
-- **Content**: Update HTML content in `public/index.html`
-- **Animations**: Adjust GSAP animations in `public/script.js`
-- **Styling**: Customize CSS classes and animations
+5. Open your browser and navigate to `http://localhost:3000`
 
 ## 📁 Project Structure
 
 ```
-portfolio/
+porthfolio/
 ├── public/
 │   ├── index.html          # Main HTML file
 │   ├── style.css           # Styles and animations
 │   └── script.js           # JavaScript functionality
 ├── server.js               # Express server
 ├── package.json            # Dependencies and scripts
-├── .env                    # Environment variables
-└── README.md              # Documentation
+└── README.md              # Project documentation
 ```
 
-## 🎨 Animation Features
+## 🎯 Key Features Explained
 
-### Hero Section
-- **Staggered Text Animation**: Title lines animate in sequence
-- **Floating Shapes**: Continuous background animations
-- **Code Window**: 3D perspective with typing effect
-- **Parallax Scrolling**: Background movement on scroll
+### Profile Photo Upload
+- Click the camera icon on your profile photo to upload a new image
+- Supports all common image formats (JPG, PNG, GIF, etc.)
+- Images are automatically resized and optimized
+- Photos persist across browser sessions using localStorage
 
-### Project Cards
-- **Hover Effects**: Scale and shadow transformations
-- **Entrance Animations**: Staggered card reveals
-- **Interactive Buttons**: Micro-animations on hover
+### Certificates Section
+- Displays your professional certifications and achievements
+- Each certificate card shows:
+  - Certificate image/thumbnail
+  - Title and issuer information
+  - Description of the certification
+  - View/Download options
+- Click "View Certificate" to see details in a modal
+- Responsive grid layout adapts to screen size
 
-### Skills Section
-- **Progress Bars**: Animated skill level indicators
-- **Icon Animations**: Rotating skill icons
-- **Hover Effects**: Card transformations
+### Theme System
+- Toggle between light and dark themes
+- Theme preference is saved in localStorage
+- Smooth transitions between themes
+- All components adapt to the selected theme
 
-### Contact Form
-- **Floating Labels**: Animated input labels
-- **Loading States**: Spinner animations
-- **Success/Error**: Animated response messages
+## 🛠️ Customization
 
-## 🌙 Theme System
+### Adding Your Information
+1. **Profile**: Update the profile section in `index.html`
+2. **Projects**: Add your projects to the projects section
+3. **Skills**: Modify the skills and progress bars
+4. **Certificates**: Add your certificates with images and details
+5. **Contact**: Update contact information and social links
 
-The portfolio supports both light and dark themes:
+### Styling
+- CSS variables for easy theme customization
+- Modular CSS structure for maintainability
+- Responsive breakpoints for all screen sizes
 
-- **Automatic Detection**: Respects user's system preference
-- **Manual Toggle**: Theme toggle button in navigation
-- **Persistent Storage**: Remembers user's choice
-- **Smooth Transitions**: Animated theme switching
+### Animations
+- GSAP animations for smooth interactions
+- Scroll-triggered animations
+- Hover effects and transitions
 
-## 📱 Mobile Features
-
-- **Touch Gestures**: Swipe to close mobile menu
-- **Responsive Design**: Optimized for all screen sizes
-- **Performance**: Optimized animations for mobile devices
-- **Accessibility**: Large touch targets and clear navigation
-
-## 🔒 Security Features
-
-- **Helmet**: Security headers
-- **CORS**: Cross-origin protection
-- **Rate Limiting**: API protection against spam
-- **Input Validation**: Sanitized form inputs
-- **Error Handling**: Graceful error responses
-
-## 🚀 Performance Optimizations
-
-- **Throttled Scroll Events**: Reduced scroll event frequency
-- **Lazy Loading**: Images and animations load on demand
-- **Minified Assets**: Optimized file sizes
-- **Caching**: Browser caching for static assets
-- **Compression**: Gzip compression for responses
-
-## 🛠️ Development
+## 🔧 Development
 
 ### Available Scripts
-```bash
-npm start          # Start production server
-npm run dev        # Start development server with nodemon
-npm run build      # Build script (placeholder)
-```
+- `npm start`: Start the production server
+- `npm run dev`: Start development server with nodemon
+- `npm run build`: Build the project (static site)
 
-### Development Features
-- **Hot Reloading**: Automatic server restart on file changes
-- **Error Logging**: Detailed error messages in development
-- **Debug Mode**: Enhanced logging for debugging
+### Adding New Features
+1. Update HTML structure in `index.html`
+2. Add styles in `style.css`
+3. Implement functionality in `script.js`
+4. Test across different devices and browsers
 
-## 📊 API Endpoints
+## 🌟 Technologies Used
 
-- `GET /` - Main portfolio page
-- `POST /contact` - Contact form submission
-- `GET /health` - Health check endpoint
-- `GET /api` - API information
+- **Frontend**: HTML5, CSS3, JavaScript (ES6+)
+- **Animations**: GSAP (GreenSock Animation Platform)
+- **Backend**: Node.js, Express.js
+- **Email**: Nodemailer
+- **Security**: Helmet.js, CORS, Rate Limiting
+- **Styling**: CSS Grid, Flexbox, CSS Variables
 
-## 🎯 Future Enhancements
+## 📱 Browser Support
 
-- [ ] Blog section with markdown support
-- [ ] Project filtering and search
-- [ ] Multi-language support
-- [ ] PWA features (offline support)
-- [ ] Analytics integration
-- [ ] SEO optimization
-- [ ] Image optimization
-- [ ] CDN integration
+- Chrome (latest)
+- Firefox (latest)
+- Safari (latest)
+- Edge (latest)
+- Mobile browsers (iOS Safari, Chrome Mobile)
 
 ## 🤝 Contributing
 
@@ -211,19 +169,13 @@ npm run build      # Build script (placeholder)
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## 👨‍💻 Author
+## 📞 Contact
 
-**Arin Raja**
-- LinkedIn: [@arin-raja](https://www.linkedin.com/in/arin-raja)
-- GitHub: [@Arinraja](https://github.com/Arinraja)
-
-## 🙏 Acknowledgments
-
-- GSAP for amazing animation capabilities
-- Font Awesome for beautiful icons
-- Google Fonts for typography
-- Express.js community for the excellent framework
+- **Name**: Arin Raja
+- **Email**: arin.raja@example.com
+- **LinkedIn**: [@arin-raja](https://www.linkedin.com/in/arin-raja)
+- **GitHub**: [@Arinraja](https://github.com/Arinraja)
 
 ---
 
-**Built with ❤️ and lots of ☕** 
+Made with ❤️ by Arin Raja 

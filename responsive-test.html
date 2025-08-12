@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Responsive Test</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #f0f0f0;
+        }
+        .test-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        .breakpoint {
+            background: #e3f2fd;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border-left: 4px solid #2196f3;
+        }
+        .current-size {
+            background: #e8f5e8;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+            border-left: 4px solid #4caf50;
+            font-weight: bold;
+        }
+        .test-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .test-card {
+            background: #f5f5f5;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+        }
+        .responsive-info {
+            background: #fff3e0;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 4px solid #ff9800;
+        }
+    </style>
+</head>
+<body>
+    <div class="test-container">
+        <h1>Portfolio Responsive Design Test</h1>
+        
+        <div class="current-size" id="currentSize">
+            Current screen size: <span id="screenSize"></span>
+        </div>
+        
+        <div class="responsive-info">
+            <h3>Responsive Breakpoints:</h3>
+            <ul>
+                <li><strong>Desktop:</strong> > 1024px</li>
+                <li><strong>Tablet:</strong> 768px - 1024px</li>
+                <li><strong>Mobile:</strong> < 768px</li>
+                <li><strong>Small Mobile:</strong> < 480px</li>
+            </ul>
+        </div>
+        
+        <div class="breakpoint">
+            <h3>Test Your Portfolio:</h3>
+            <p>Resize your browser window to test different screen sizes. Your portfolio should adapt smoothly across all breakpoints.</p>
+            <a href="http://localhost:3000" target="_blank" style="background: #2196f3; color: white; padding: 10px 20px; text-decoration: none; border-radius: 5px;">Open Portfolio</a>
+        </div>
+        
+        <div class="test-grid">
+            <div class="test-card">
+                <h4>Navigation</h4>
+                <p>✅ Mobile menu should appear on small screens</p>
+                <p>✅ Navigation should be responsive</p>
+            </div>
+            <div class="test-card">
+                <h4>Hero Section</h4>
+                <p>✅ Content should stack on mobile</p>
+                <p>✅ Text should be readable on all sizes</p>
+            </div>
+            <div class="test-card">
+                <h4>Profile Card</h4>
+                <p>✅ Photo should scale appropriately</p>
+                <p>✅ Card should look good on mobile</p>
+            </div>
+            <div class="test-card">
+                <h4>Certificates</h4>
+                <p>✅ Grid should adapt to screen size</p>
+                <p>✅ Cards should be readable on mobile</p>
+            </div>
+            <div class="test-card">
+                <h4>Contact Form</h4>
+                <p>✅ Form should stack on mobile</p>
+                <p>✅ Social icons should be accessible</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function updateScreenSize() {
+            const width = window.innerWidth;
+            const height = window.innerHeight;
+            const screenSizeElement = document.getElementById('screenSize');
+            
+            let size = '';
+            if (width > 1024) {
+                size = 'Desktop (>1024px)';
+            } else if (width > 768) {
+                size = 'Tablet (768px-1024px)';
+            } else if (width > 480) {
+                size = 'Mobile (480px-768px)';
+            } else {
+                size = 'Small Mobile (<480px)';
+            }
+            
+            screenSizeElement.textContent = `${size} - ${width}x${height}`;
+        }
+        
+        window.addEventListener('resize', updateScreenSize);
+        updateScreenSize();
+    </script>
+</body>
+</html>

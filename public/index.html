@@ -48,6 +48,10 @@
           <span class="nav-icon"><i class="fas fa-tools"></i></span>
           <span class="nav-text">Skills</span>
         </a>
+        <a href="#certificates" class="nav-link" data-section="certificates">
+          <span class="nav-icon"><i class="fas fa-certificate"></i></span>
+          <span class="nav-text">Certificates</span>
+        </a>
         <a href="#contact" class="nav-link" data-section="contact">
           <span class="nav-icon"><i class="fas fa-envelope"></i></span>
           <span class="nav-text">Contact</span>
@@ -71,10 +75,31 @@
   <!-- Hero Section -->
   <section id="hero" class="section hero">
     <div class="hero-background">
+      <div class="animated-background">
+        <div class="bg-layer bg-layer-1"></div>
+        <div class="bg-layer bg-layer-2"></div>
+        <div class="bg-layer bg-layer-3"></div>
+        <div class="bg-layer bg-layer-4"></div>
+      </div>
       <div class="floating-shapes">
         <div class="shape shape-1"></div>
         <div class="shape shape-2"></div>
         <div class="shape shape-3"></div>
+        <div class="shape shape-4"></div>
+        <div class="shape shape-5"></div>
+        <div class="shape shape-6"></div>
+      </div>
+      <div class="particle-container">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
       </div>
     </div>
     
@@ -170,8 +195,14 @@
       <div class="about-visual">
         <div class="profile-card">
           <div class="profile-image">
-            <div class="image-placeholder">
-              <i class="fas fa-user"></i>
+            <div class="profile-photo-container">
+              <img src="images/profile-photo.jpg" alt="Arin Raja" class="profile-photo" id="profilePhoto">
+              <div class="photo-overlay">
+                <label for="photoUpload" class="upload-btn">
+                  <i class="fas fa-camera"></i>
+                </label>
+                <input type="file" id="photoUpload" accept="image/*" style="display: none;">
+              </div>
             </div>
           </div>
           <div class="profile-info">
@@ -180,7 +211,7 @@
             <div class="profile-links">
               <a href="https://github.com/Arinraja" class="social-link" target="_blank"><i class="fab fa-github"></i></a>
               <a href="https://www.linkedin.com/in/arin-raja" class="social-link" target="_blank"><i class="fab fa-linkedin"></i></a>
-              <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+              <!-- <a href="#" class="social-link"><i class="fab fa-twitter"></i></a> -->
             </div>
           </div>
         </div>
@@ -322,6 +353,121 @@
     </div>
   </section>
 
+  <!-- Certificates Section -->
+  <section id="certificates" class="section certificates">
+    <div class="section-header">
+      <h2 class="section-title">Certificates & Achievements</h2>
+      <div class="section-line"></div>
+    </div>
+    
+    <div class="certificates-container">
+      <div class="certificate-card">
+        <div class="certificate-image">
+          <div class="pdf-preview">
+            <i class="fas fa-file-pdf"></i>
+            <span>PDF Certificate</span>
+          </div>
+          <div class="certificate-overlay">
+            <i class="fas fa-certificate"></i>
+          </div>
+        </div>
+        <div class="certificate-content">
+          <h3 class="certificate-title">Web Development Internship</h3>
+          <p class="certificate-issuer">Technohack - 2024</p>
+          <p class="certificate-description">
+            Completed comprehensive web development internship covering modern technologies, 
+            hands-on project development, and industry best practices.
+          </p>
+          <div class="certificate-actions">
+            <a href="images/Internship certificate at technohack Webdevelopment.pdf" class="btn-ghost" target="_blank">
+              <i class="fas fa-file-pdf"></i>
+              <span>View PDF</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="certificate-card">
+        <div class="certificate-image">
+          <div class="pdf-preview">
+            <i class="fas fa-file-pdf"></i>
+            <span>PDF Certificate</span>
+          </div>
+          <div class="certificate-overlay">
+            <i class="fas fa-trophy"></i>
+          </div>
+        </div>
+        <div class="certificate-content">
+          <h3 class="certificate-title">Healthcare Hackathon</h3>
+          <p class="certificate-issuer">IIIT Sri City - 2024</p>
+          <p class="certificate-description">
+            Participated in internal healthcare hackathon, developing innovative solutions 
+            for healthcare challenges using modern technologies.
+          </p>
+          <div class="certificate-actions">
+            <a href="images/IIIT Sri City's Internal Healthcare Hackathon.pdf" class="btn-ghost" target="_blank">
+              <i class="fas fa-file-pdf"></i>
+              <span>View PDF</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="certificate-card">
+        <div class="certificate-image">
+          <div class="pdf-preview">
+            <i class="fas fa-file-pdf"></i>
+            <span>PDF Certificate</span>
+          </div>
+          <div class="certificate-overlay">
+            <i class="fas fa-rocket"></i>
+          </div>
+        </div>
+        <div class="certificate-content">
+          <h3 class="certificate-title">National Space Hackathon</h3>
+          <p class="certificate-issuer">IIT Delhi - 2025</p>
+          <p class="certificate-description">
+            Competed in prestigious National Space Hackathon at IIT Delhi, 
+            working on space technology solutions and innovative projects.
+          </p>
+          <div class="certificate-actions">
+            <a href="images/National Space Hackathon 2025 IIT Delhi .pdf" class="btn-ghost" target="_blank">
+              <i class="fas fa-file-pdf"></i>
+              <span>View PDF</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="certificate-card">
+        <div class="certificate-image">
+          <div class="pdf-preview">
+            <i class="fas fa-file-pdf"></i>
+            <span>PDF Certificate</span>
+          </div>
+          <div class="certificate-overlay">
+            <i class="fas fa-chart-bar"></i>
+          </div>
+        </div>
+        <div class="certificate-content">
+          <h3 class="certificate-title">Data Analytics & Visualization</h3>
+          <p class="certificate-issuer">Online Internship - 2024</p>
+          <p class="certificate-description">
+            Completed job-oriented internship in data analytics and visualization, 
+            gaining practical experience in data processing and visual storytelling.
+          </p>
+          <div class="certificate-actions">
+            <a href="images/Data Analytics and Visualization Job certificate online intership.pdf" class="btn-ghost" target="_blank">
+              <i class="fas fa-file-pdf"></i>
+              <span>View PDF</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
   <!-- Contact Section -->
   <section id="contact" class="section contact">
     <div class="section-header">
@@ -337,7 +483,7 @@
           </div>
           <div class="contact-details">
             <h3>Email</h3>
-            <p>arin.raja@example.com</p>
+            <p>ratif144@gmail.com</p>
           </div>
         </div>
         
@@ -362,36 +508,50 @@
         </div>
       </div>
       
-      <form id="contactForm" class="contact-form">
-        <div class="form-group">
-          <div class="input-wrapper">
-            <input type="text" name="name" id="name" required />
-            <label for="name">Your Name</label>
-            <div class="input-line"></div>
+      <div class="contact-form-section">
+        <form id="contactForm" class="contact-form">
+          <div class="form-group">
+            <div class="input-wrapper">
+              <input type="text" name="name" id="name" required />
+              <label for="name">Your Name</label>
+              <div class="input-line"></div>
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <div class="input-wrapper">
+              <input type="email" name="email" id="email" required />
+              <label for="email">Your Email</label>
+              <div class="input-line"></div>
+            </div>
+          </div>
+          
+          <div class="form-group">
+            <div class="input-wrapper">
+              <textarea name="message" id="message" required></textarea>
+              <label for="message">Your Message</label>
+              <div class="input-line"></div>
+            </div>
+          </div>
+          
+          <button type="submit" class="btn-primary">
+            <span>Send Message</span>
+            <i class="fas fa-paper-plane"></i>
+          </button>
+        </form>
+        
+        <div class="contact-social-links">
+          <h3>Connect with me</h3>
+          <div class="social-icons">
+            <a href="https://github.com/Arinraja" class="social-icon-link" target="_blank" title="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/arin-raja" class="social-icon-link" target="_blank" title="LinkedIn">
+              <i class="fab fa-linkedin"></i>
+            </a>
           </div>
         </div>
-        
-        <div class="form-group">
-          <div class="input-wrapper">
-            <input type="email" name="email" id="email" required />
-            <label for="email">Your Email</label>
-            <div class="input-line"></div>
-          </div>
-        </div>
-        
-        <div class="form-group">
-          <div class="input-wrapper">
-            <textarea name="message" id="message" required></textarea>
-            <label for="message">Your Message</label>
-            <div class="input-line"></div>
-          </div>
-        </div>
-        
-        <button type="submit" class="btn-primary">
-          <span>Send Message</span>
-          <i class="fas fa-paper-plane"></i>
-        </button>
-      </form>
+      </div>
     </div>
     
     <div id="formResponse" class="form-response"></div>
@@ -407,12 +567,13 @@
         <a href="#hero">Home</a>
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
+        <a href="#certificates">Certificates</a>
         <a href="#contact">Contact</a>
       </div>
       <div class="footer-social">
         <a href="https://github.com/Arinraja" class="social-link" target="_blank"><i class="fab fa-github"></i></a>
         <a href="https://www.linkedin.com/in/arin-raja" class="social-link" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+        <!-- <a href="#" class="social-link"><i class="fab fa-twitter"></i></a> -->
       </div>
     </div>
     <div class="footer-bottom">
