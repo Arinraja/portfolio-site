@@ -11,7 +11,6 @@ const navLinksElements = document.querySelectorAll('.nav-link');
 const contactForm = document.getElementById('contactForm');
 const formResponse = document.getElementById('formResponse');
 const profilePhoto = document.getElementById('profilePhoto');
-const photoUpload = document.getElementById('photoUpload');
 
 // Theme Management
 let currentTheme = localStorage.getItem('theme') || 'light';
@@ -62,40 +61,7 @@ navLinksElements.forEach(link => {
   });
 });
 
-// Profile Photo Upload Functionality
-if (photoUpload) {
-  photoUpload.addEventListener('change', function(e) {
-    const file = e.target.files[0];
-    if (file) {
-      if (file.type.startsWith('image/')) {
-        const reader = new FileReader();
-        reader.onload = function(e) {
-          profilePhoto.src = e.target.result;
-          
-          // Save to localStorage for persistence
-          localStorage.setItem('profilePhoto', e.target.result);
-          
-          // Animate the photo change
-          gsap.fromTo(profilePhoto, 
-            { scale: 0.8, opacity: 0 },
-            { scale: 1, opacity: 1, duration: 0.5, ease: 'back.out(1.7)' }
-          );
-        };
-        reader.readAsDataURL(file);
-      } else {
-        alert('Please select a valid image file.');
-      }
-    }
-  });
-}
-
-// Load saved profile photo on page load
-document.addEventListener('DOMContentLoaded', () => {
-  const savedPhoto = localStorage.getItem('profilePhoto');
-  if (savedPhoto && profilePhoto) {
-    profilePhoto.src = savedPhoto;
-  }
-});
+// Profile photo is now static and cannot be changed
 
 // Scroll Progress Bar
 window.addEventListener('scroll', () => {
