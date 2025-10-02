@@ -1255,7 +1255,7 @@ body {
     font-size: 0.9rem;
   }
 
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
   .certificates-container {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1.5rem;
@@ -1276,7 +1276,7 @@ body {
   .contact-form-section {
     gap: 2rem;
   }
-  
+   */
   /* Tablet optimizations */
   .hero-title {
     font-size: 3rem;
